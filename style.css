@@ -11,8 +11,9 @@ header div img{
     position: absolute;
     right: 100px;
     z-index: 1;
-    display: none;
-    transition: linear 1s;
+    height: 0;
+    transition: height linear .5s .25s;
+    overflow: hidden;
 }
 
 header{
