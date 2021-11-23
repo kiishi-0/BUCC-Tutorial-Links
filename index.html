@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BUCC Tutorial Links | Home</title>
+</head>
+<body>
+    <header>
+        <div class="burger" id="burger">
+            <img src="images/burger.svg" alt="burger bars">
+        </div>
+        <div class="info" id="info">
+            <img src="images/question-solid 1.svg" alt="info" title="info">
+        </div>
+        <div class="close" id="close">
+            <img src="images/close.svg" alt="close" >
+        </div>
+    </header>
+    <main>
+        <div class="menu section" id="menu-section">
+            <div class="menu-box-container">
+                <div class="menu-box">
+                    <p>WEB DEVELOPMENT</p>
+                </div>
+                <div class="menu-box">
+                    <p>DEV OPS & CLOUD COMPUTING</p>
+                </div>
+                <div class="menu-box">
+                    <p>UI/UX</p>
+                </div>
+                <div class="menu-box">
+                    <p>MOBILE APP DEVELOPMENT</p>
+                </div>
+                <div class="menu-box">
+                    <p>DATA SCIENCE</p>
+                </div>
+                <div class="menu-box">
+                    <p>OTHER LANGUAGES</p>
+                </div>
+            </div>
+        </div>
+        <div class="home section">
+            <div class="bucc-logo">
+                <img src="images/bucc-logo.svg" alt="logo">
+            </div>
+            <p>...Proud to belong</p>
+        </div>
+    </main>
+    <script>
+        const burger = document.getElementById('burger');
+        const info = document.getElementById('info');
+        const menu = document.getElementById('menu-section');
+        const close = document.getElementById('close');
+
+        burger.addEventListener('click', ()=>{
+            menu.style.right = 0;
+            close.style.display = 'block'
+        });
+        close.addEventListener('click', ()=>{
+            menu.style.right = "100%";
+            close.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
