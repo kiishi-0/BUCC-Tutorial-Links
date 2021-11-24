@@ -22,9 +22,11 @@
     <main>
         <div class="menu section" id="menu-section">
             <div class="menu-box-container">
-                <div class="menu-box">
-                    <p>WEB DEVELOPMENT</p>
-                </div>
+                <a href="web.html">
+                    <div class="menu-box">
+                        <p>WEB DEVELOPMENT</p>
+                    </div>
+                </a>
                 <div class="menu-box">
                     <p>DEV OPS & CLOUD COMPUTING</p>
                 </div>
@@ -49,20 +51,6 @@
             <p>...Proud to belong</p>
         </div>
     </main>
-    <script>
-        const burger = document.getElementById('burger');
-        const info = document.getElementById('info');
-        const menu = document.getElementById('menu-section');
-        const close = document.getElementById('close');
-
-        burger.addEventListener('click', ()=>{
-            menu.style.right = 0;
-            close.style.height = '100px'
-        });
-        close.addEventListener('click', ()=>{
-            menu.style.right = "100%";
-            close.style.height = '0'
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
