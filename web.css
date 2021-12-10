@@ -6,6 +6,9 @@ main .home{
     align-items: flex-start;
     justify-content: flex-start;
 }
+h1, p{
+    color: #152B61;
+}
 main .home .playlists{
     width: 100%;
     margin: 20px 0;
@@ -19,6 +22,7 @@ main .home .playlists .playlist-row{
     width: 100%;
     margin: 10px 2%;
     display: flex;
+    flex-wrap: wrap;
 }
 main .home .playlists .playlist-row .playlist-box{
     width: 250px;
@@ -29,6 +33,7 @@ main .home .playlists .playlist-row .playlist-box{
     flex-direction: column;
     padding: 20px;
     margin-right: 50px;
+    margin: 0 50px 50px 0;
     /* justify-items: center; */
     /* justify-content: flex-start */
 }
@@ -48,4 +53,8 @@ main .home .playlists .playlist-row .playlist-box .link .arrow{
     width: 70px;
     padding: 10px 0 5px 0;
     background-color:#214295;
+    transition: background ease-in-out .25s;
+}
+main .home .playlists .playlist-row .playlist-box .link .arrow:hover{
+    background-color: #152B61;
 }
