@@ -1,13 +1,19 @@
 main .home{
     width: 100%;
     padding: 0 10%;
-    padding-top: 8%;
+    padding-top: 20%;
+    /* margin-top: 10%; */
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    /* background-color: violet; */
 }
 h1, p{
     color: #152B61;
+}
+main .home .title{
+    width: 100%;
+    /* background-color: red; */
 }
 main .home .playlists{
     width: 100%;
@@ -16,24 +22,25 @@ main .home .playlists{
 main .home .playlists .playlists-header{
     margin-top: 10px;
     font-size: 25px;
+    /* background-color: wheat; */
 }
 main .home .playlists .playlist-row{
-    /* background-color: purple; */
+    background-color: purple;
     width: 100%;
     margin: 10px 2%;
     display: flex;
     flex-wrap: wrap;
 }
 main .home .playlists .playlist-row .playlist-box{
-    width: 250px;
-    height: 295px;
+    width: 100%;
+    min-height: 150px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-right: 50px;
-    margin: 0 50px 50px 0;
+    /* margin-right: 50px; */
+    margin-bottom: 50px;
     /* justify-items: center; */
     /* justify-content: flex-start */
 }
@@ -57,4 +64,10 @@ main .home .playlists .playlist-row .playlist-box .link .arrow{
 }
 main .home .playlists .playlist-row .playlist-box .link .arrow:hover{
     background-color: #152B61;
+}
+@media only screen and (max-width: 375px){
+    main .home .title h1{
+        font-size: 40px;
+        margin-top: 50px;
+    }
 }
