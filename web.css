@@ -25,7 +25,7 @@ main .home .playlists .playlists-header{
     /* background-color: wheat; */
 }
 main .home .playlists .playlist-row{
-    background-color: purple;
+    /* background-color: purple; */
     width: 100%;
     margin: 10px 2%;
     display: flex;
@@ -33,16 +33,27 @@ main .home .playlists .playlist-row{
 }
 main .home .playlists .playlist-row .playlist-box{
     width: 100%;
-    min-height: 150px;
+    /* min-height: 150px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 20px;
     /* margin-right: 50px; */
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     /* justify-items: center; */
     /* justify-content: flex-start */
+}
+main .home .playlists .playlist-row .playlist-box div{
+    flex: 1;
+}
+main .home .playlists .playlist-row .playlist-box .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .home .playlists .playlist-row .playlist-box .link p{
+    margin-bottom: 20px;
 }
 main .home .playlists .playlist-row .playlist-box h3{
     font-weight: 400;
@@ -51,6 +62,7 @@ main .home .playlists .playlist-row .playlist-box h3{
 main .home .playlists .playlist-row .playlist-box .link{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     align-items: flex-end;
