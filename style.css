@@ -76,6 +76,7 @@ main .menu .menu-box-container .menu-box{
     height: 200px;
     background-color: #214295;
     margin: 10px;
+    padding: 0 25px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: #fff;
