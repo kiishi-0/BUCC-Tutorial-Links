@@ -1,7 +1,7 @@
 main .home{
     width: 100%;
     padding: 0 10%;
-    padding-top: 20%;
+    padding-top: 15%;
     /* margin-top: 10%; */
     display: flex;
     align-items: flex-start;
@@ -27,7 +27,7 @@ main .home .playlists .playlists-header{
 main .home .playlists .playlist-row{
     /* background-color: purple; */
     width: 100%;
-    margin: 10px 2%;
+    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,6 +76,11 @@ main .home .playlists .playlist-row .playlist-box .link .arrow{
 }
 main .home .playlists .playlist-row .playlist-box .link .arrow:hover{
     background-color: #152B61;
+}
+@media only screen and (max-width: 768px){
+    main .home{
+        padding-top: 20%;
+    }
 }
 @media only screen and (max-width: 375px){
     main .home .title h1{
